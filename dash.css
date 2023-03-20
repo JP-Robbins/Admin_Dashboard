@@ -1,0 +1,333 @@
+
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto;
+    background-color: #15616d;
+    grid-template-areas: 
+    "sidebar  header header header"
+    "sidebar  projects projects announcements"
+    "sidebar  projects projects trending";
+}
+
+.dash {
+    display:flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.dash-icon {
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    background-color: #78290f;
+    color: #ffecd1;
+}
+
+ul {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li {
+    margin: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+}
+
+.header {
+    display:grid;
+    background-color: #ffecd1;
+         grid-area: header;
+         grid-template-columns: 2;
+         grid-template-rows: 2;
+         grid-template-areas:
+         "header1l header1r"
+         "header2l header2r";}
+
+.input {
+    flex: 1; 
+    border-radius: 1em; 
+    background-color: #ff7D00; 
+    color: #001524; 
+    border-color: #ff980087; }        
+
+.input input:focus, .input textarea:focus {
+  border: 1px solid #e09f3e !important;
+  box-shadow: 0 0 3px #e09f3e !important;
+  -moz-box-shadow: 0 0 3px #e09f3e !important;
+  -webkit-box-shadow: 0 0 3px #e09f3e !important;
+            }
+
+input:focus, textarea:focus, select:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+                }            
+
+.projects {display: grid;
+           background-color: #15616d;
+           color: #001524;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: .25fr 1.25fr 1.25fr 1.25fr;
+           margin: 1rem;
+           grid-area: projects;
+           gap: 1rem;
+           grid-template-areas: 
+           "head head"
+           "one four"
+           "two five"
+           "three six";}
+ .head {
+    display: grid;
+    color: #ff7D00;
+    grid-area: head;
+ }          
+
+
+ .one {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: one;
+    background-color: #ffecd1 ;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+}
+
+.two {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: two;
+    background-color: #ffecd1;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+   }
+
+.three {display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-area: three;
+    background-color: #ffecd1;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+}
+
+.four {display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-area: four;
+    background-color: #ffecd1;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+}
+
+.five {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: five;
+    background-color: #ffecd1;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+}
+
+
+.six {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: six;
+    background-color: #ffecd1;
+    border-radius: 15px;
+    border-left: 10px solid #ff7D00;
+    padding: 10px;
+}
+
+.trending {
+          display: grid;
+          grid-area: trending;
+}           
+
+.announcements {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-area: announcements;
+}
+
+.header1l {
+    display: flex;
+    align-items: center;
+    grid-area: header1l;
+    margin-left: 2rem;
+
+}
+
+.search {
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.header1r {
+    display: flex;
+    grid-area: header1r;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: 550;
+}
+
+.noti-bell {
+    height: 25px;
+    width: 25px;
+    color: #40e0d0;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+.header2l {
+    display: flex;
+    grid-area: header2l;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.big-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.header2r {
+    display: flex;
+    grid-area: header2r;
+    justify-content: space-evenly;
+    align-items: center;}
+
+.new,
+.upload,
+.share {
+    height: 39px;
+    width: 108px;
+    background-color: #0e464e;
+    color: #ffecd1;
+    border-radius: 30px;
+    font-size: medium;
+    border-color: #ff7d00a8;
+    border: 2px;
+}
+
+.new:active,
+.upload:active,
+.share:active {
+    box-shadow: 2px 2px 5px #ff7D00;
+}
+
+.home,
+.profile,
+.messages,
+.history,
+.communities,
+.settings,
+.privacy,
+.support {
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+}
+.pro-buttons {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;    
+}
+
+.star,
+.eye,
+.magnify {
+    height: 30px;
+    width: 30px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.tround,
+.tags
+ {
+    border-radius: 15px;
+    border-color: #ffecd1;
+    background-color: #ffecd1;
+    padding: 20px;
+}
+
+#community,
+#update {
+    padding:5px;
+    border-bottom: 3px dotted #ff7D00;
+}
+
+.announced {
+    background-color: #15616d;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #ff7D00;
+    border: #15616d solid 10px;
+    
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffecd1;
+}
+
+.rachel-pic,
+.jude-pic,
+.luna-pic {
+    height: 50px;
+    width: 50px;
+    background-color: #001524;
+    padding: 2px;
+    border: 5px solid #001524;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.rachel,
+.jude,
+.luna {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
